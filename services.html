@@ -3,6 +3,16 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W49S00XSFS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W49S00XSFS');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -13,18 +23,19 @@
     <title>Services</title>
 </head>
 
-<body  class="container">
+<body>
+<div class="skip"><a href="#main">Skip to Main Content</a></div>
+<div class="container">
+
 <header>
     <nav class="navbar">
-        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="attractions.html">Attractions</a></li>
             <li class="active"><a href="services.html">services</a></li>
             <li><a href="gallery.html">gallery</a></li>
-        </ul>
     </nav>
 </header>
-<main>
+<main id="main">
     <div class="background">
     <h1>Hotel Booking, Ticket reserve</h1>
     <h2>We provide hotel and ticket reservations in attractions...</h2>
@@ -113,23 +124,46 @@
 
     </p>
     </div>
-
-<div class="self">
-    <img src="images/jiahang.jpeg" class="photo" alt="jiahang photo" >
-    <h1>Jiahang Ren</h1>
-    <div>Graduate Student</div>
-    <div>M.S. in Information Science at Umich</div>
-    <div>entry level web designer</div>
-    <div class="contact">
-        <i class="fa fa-github"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-envelope"></i>
-    </div>
-</div>
 </main>
+    
+    <aside>
+        <div class="self">
+            <img alt="jiahang photo" class="photo" src="images/jiahang.jpeg">
+            <div>Jiahang Ren</div>
+            <div>Graduate Student</div>
+            <div>M.S. in Information Science at Umich</div>
+            <div>entry level web designer</div>
+            <div class="contact">
+                <i class="fa fa-github"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+        <div class="perinfo">
+            <form
+                    action="https://formspree.io/f/mrgdjzov"
+                    method="POST"
+            >
+                <label class="email">
+                    Your email:
+                    <input name="email" type="email">
+                </label>
+                <label class="message">
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <div class="submit">
+                    <button type="submit">Send</button>
+                </div>
+
+            </form>
+        </div>
+    </aside>
 <footer id="index-footer">
     &copy; 2022
 </footer>
+</div>
 </body>
 
 </html>

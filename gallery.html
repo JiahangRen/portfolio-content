@@ -3,6 +3,20 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W49S00XSFS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-W49S00XSFS');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -13,140 +27,175 @@
     <title>gallery</title>
 </head>
 
-<body  class="container">
+<body>
+<div class="skip"><a href="#main">Skip to Main Content</a></div>
+<div class="container">
 <header>
     <nav class="navbar">
-        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="attractions.html">Attractions</a></li>
             <li><a href="services.html">services</a></li>
             <li class="active"><a href="gallery.html">gallery</a></li>
-        </ul>
     </nav>
 </header>
 
-<main>
+<main  id="main">
     <div class="background">
 
-    <h1>Gallery of attractions and hotels</h1>
-    <p> Here is the gallery for attractions and hotels, but I haven't decided whether to arrange other content here.
-        A mere gallery might make the page monotonous, I might adjust this part.</p>
-    <p>We hope you can help other travelers make travel plans by uploading photos of attractions or hotels</p>
-    <h2>Attractions</h2>
-    <h3>Hangzhou City</h3>
-    <div class="gallery">
-        <figure>
-            <img src="images/hangzhou_gallery_1.jpg" alt="hangzhou gallery west lake"/>
-            <figcaption> In the distant view of the West Lake under the night light, you can see the Broken Bridge of the West Lake and the Leifeng Pagoda in the distance. The lights and lake light illuminate the scenery very beautifully.</figcaption>
-        </figure>
-    </div>
-    <div class="gallery">
-        <figure>
-            <img src="images/hangzhou_gallery_2.jpg" alt="hangzhou gallery little alley"/>
-            <figcaption>Little Alley in the Hangzhou City,Tourists are playing in the alleys, the surrounding buildings are beautiful</figcaption>
-        </figure>
-    </div>
-    <div class="gallery">
-        <figure>
-            <img src="images/hangzhou_gallery_3.PNG" alt="hangzhou gallery The Fall of the Pagoda"/>
-            <figcaption>The Fall of the Pagoda,Leifeng Pagoda under the setting sun, a bird's-eye view of the scene when the sun sets</figcaption>
-        </figure>
-    </div>
-
-    <div class="gallery">
-        <figure>
-            <img src="images/hangzhou_gallery_4.jpg" alt="hangzhou gallery Lingyin Temple"/>
-            <figcaption> Lingyin Temple. Ancient plaque in Lingyin Temple</figcaption>
-        </figure>
-    </div>
-    <h3>Shanghai City</h3>
-    <div class="gallery">
-        <figure>
-            <img src="images/shanghai_gallery_1.jpg" alt="shanghai gallery the bund"/>
-            <figcaption> The Bund night view, Night view of the Bund lights under time-lapse photography</figcaption>
-        </figure>
-    </div>
-    <div class="gallery">
-        <figure>
-            <img src="images/shanghai_gallery_2.jpg" alt="shanghai gallery yuyuan garden"/>
-            <figcaption> yuyuan garden, Yuyuan Lantern Festival, a traditional large-scale gathering site</figcaption>
-        </figure>
-    </div>
-
-    <div class="gallery">
-        <figure>
-            <img src="images/shanghai_gallery_3.jpg" alt="shanghai gallery China pavilion at Expo 2010"/>
-            <figcaption> China pavilion at Expo 2010, The architectural appearance of the China Pavilion is based on the theme of "the crown of the East, the prosperity of China, the granary of the world, and the prosperity of the people", representing the spirit and temperament of Chinese culture</figcaption>
-        </figure>
-    </div>
-
-    <h3>Beijing City</h3>
-    <div class="gallery">
-        <figure>
-            <img src="images/beijing_gallery_1.PNG" alt="beijing gallery Tiananmen Square"/>
-            <figcaption> Tiananmen Square is a city square located in the center of Beijing, China, one of the largest city squares in the world </figcaption>
-        </figure>
-    </div>
-
-    <div class="gallery">
-        <figure>
-            <img src="images/beijing_gallery_2.jpg" alt="beijing gallery Temple of Heaven"/>
-            <figcaption> Temple of Heaven, The Temple of Heaven, founded in the first half of the 15th century, is a dignified complex of fine cult buildings set in gardens and surrounded by historic pine woods. </figcaption>
-        </figure>
-    </div>
-
-    <figure class="gallery">
-        <img src="images/beijing_gallery_3.jpeg" alt="beijing gallery The Great Wall of China"/>
-        <figcaption> The Great Wall of China, The history of the Great Wall of China began when China's first emperor, Qin Shihuang, connected fortifications built by various countries during the Spring and Autumn and Warring States periods to protect his newly established Qin Dynasty from the invasion of nomadic peoples in the interior.</figcaption>
-    </figure>
-
-    <div class="gallery">
-        <figure>
-            <img src="images/beijing_gallery_4.jpg" alt="beijing gallery Nest-type Beijing Olympic Stadium">
-            <figcaption> Nest-type Beijing Olympic Stadium, Built on the Olympic Green, Beijing National Stadium, or the Bird’s Nest Stadium, as it has become known, is the biggest stadium in Beijing and an important Olympic venue, which staged the 2008 Summer Olympics.</figcaption>
-        </figure>
-    </div>
-
-    <h2>Hotels</h2>
-    <h3>Shanghai City</h3>
-    <div class="gallery">
-        <figure>
-            <img src="images/shanghai_hotel_1.PNG" alt="shanghai gallery Intercontinental Hotel Wonderland"
-                 >
-            <figcaption> Intercontinental Hotel Wonderland</figcaption>
-        </figure>
-    </div>
-
-    <h3>Beijing City</h3>
-    <div class="gallery">
-        <figure>
-            <img src="images/beijing_hotel_1.PNG" alt="beijing gallery Renaissance Beijing Wangfujing Hotel"
-                 >
-            <figcaption> Renaissance Beijing Wangfujing Hotel</figcaption>
-        </figure>
-    </div>
+        <h1>Gallery of attractions and hotels</h1>
+        <p> Here is the gallery for attractions and hotels, but I haven't decided whether to arrange other content here.
+            A mere gallery might make the page monotonous, I might adjust this part.</p>
+        <p>We hope you can help other travelers make travel plans by uploading photos of attractions or hotels</p>
+<!--        <h2>Attractions</h2>-->
+<!--        <h3>Hangzhou City</h3>-->
+        <div class = "flex-container">
+        <div class="gallery">
+            <figure>
+                <img src="images/hangzhou_gallery_1.jpg" alt="hangzhou gallery west lake"/>
+                <figcaption> In the distant view of the West Lake under the night light, you can see the Broken Bridge
+                    of the West Lake and the Leifeng Pagoda in the distance. The lights and lake light illuminate the
+                    scenery very beautifully.
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery">
+            <figure>
+                <img src="images/hangzhou_gallery_2.jpg" alt="hangzhou gallery little alley"/>
+                <figcaption>Little Alley in the Hangzhou City,Tourists are playing in the alleys, the surrounding
+                    buildings are beautiful
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery">
+            <figure>
+                <img src="images/hangzhou_gallery_3.PNG" alt="hangzhou gallery The Fall of the Pagoda"/>
+                <figcaption>The Fall of the Pagoda,Leifeng Pagoda under the setting sun, a bird's-eye view of the scene
+                    when the sun sets
+                </figcaption>
+            </figure>
         </div>
 
+        <div class="gallery">
+            <figure>
+                <img src="images/hangzhou_gallery_4.jpg" alt="hangzhou gallery Lingyin Temple"/>
+                <figcaption> Lingyin Temple. Ancient plaque in Lingyin Temple</figcaption>
+            </figure>
+        </div>
+<!--        <h3>Shanghai City</h3>-->
+        <div class="gallery">
+            <figure>
+                <img src="images/shanghai_gallery_1.jpg" alt="shanghai gallery the bund"/>
+                <figcaption> The Bund night view, Night view of the Bund lights under time-lapse photography
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery">
+            <figure>
+                <img src="images/shanghai_gallery_2.jpg" alt="shanghai gallery yuyuan garden"/>
+                <figcaption> yuyuan garden, Yuyuan Lantern Festival, a traditional large-scale gathering site
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/shanghai_gallery_3.jpg" alt="shanghai gallery China pavilion at Expo 2010"/>
+                <figcaption> China pavilion at Expo 2010, The architectural appearance of the China Pavilion is based on
+                    the theme of "the crown of the East, the prosperity of China, the granary of the world, and the
+                    prosperity of the people", representing the spirit and temperament of Chinese culture
+                </figcaption>
+            </figure>
+        </div>
+
+<!--        <h3>Beijing City</h3>-->
+        <div class="gallery">
+            <figure>
+                <img src="images/beijing_gallery_1.PNG" alt="beijing gallery Tiananmen Square"/>
+                <figcaption> Tiananmen Square is a city square located in the center of Beijing, China, one of the
+                    largest city squares in the world
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/beijing_gallery_2.jpg" alt="beijing gallery Temple of Heaven"/>
+                <figcaption> Temple of Heaven, The Temple of Heaven, founded in the first half of the 15th century, is a
+                    dignified complex of fine cult buildings set in gardens and surrounded by historic pine woods.
+                </figcaption>
+            </figure>
+        </div>
+
+        <figure class="gallery">
+            <img src="images/beijing_gallery_3.jpeg" alt="beijing gallery The Great Wall of China"/>
+            <figcaption> The Great Wall of China, The history of the Great Wall of China began when China's first
+                emperor, Qin Shihuang, connected fortifications built by various countries during the Spring and Autumn
+                and Warring States periods to protect his newly established Qin Dynasty from the invasion of nomadic
+                peoples in the interior.
+            </figcaption>
+        </figure>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/beijing_gallery_4.jpg" alt="beijing gallery Nest-type Beijing Olympic Stadium">
+                <figcaption> Nest-type Beijing Olympic Stadium, Built on the Olympic Green, Beijing National Stadium, or
+                    the Bird’s Nest Stadium, as it has become known, is the biggest stadium in Beijing and an important
+                    Olympic venue, which staged the 2008 Summer Olympics.
+                </figcaption>
+            </figure>
+        </div>
+
+<!--        <h2>Hotels</h2>-->
+<!--        <h3>Shanghai City</h3>-->
+        <div class="gallery">
+            <figure>
+                <img src="images/shanghai_hotel_1.PNG" alt="shanghai gallery Intercontinental Hotel Wonderland"
+                >
+                <figcaption> Intercontinental Hotel Wonderland</figcaption>
+            </figure>
+        </div>
+    </div>
     </div>
 
 
-<div class="self">
-    <img src="images/jiahang.jpeg" class="photo" alt="jiahang photo" >
-    <h1>Jiahang Ren</h1>
-    <div>Graduate Student</div>
-    <div>M.S. in Information Science at Umich</div>
-    <div>entry level web designer</div>
-    <div class="contact">
-        <i class="fa fa-github"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-envelope"></i>
-    </div>
-</div>
 </main>
-
+<aside>
+    <div class="self">
+        <img src="images/jiahang.jpeg" class="photo" alt="jiahang photo">
+        <div>Jiahang Ren</div>
+        <div>Graduate Student</div>
+        <div>M.S. in Information Science at Umich</div>
+        <div>entry level web designer</div>
+        <div class="contact">
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-envelope"></i>
+        </div>
+    </div>
+    <div class="perinfo">
+        <form
+                action="https://formspree.io/f/mrgdjzov"
+                method="POST"
+        >
+            <label class="email">
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label class="message">
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <div class="submit">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</aside>
 <footer id="index-footer">
-    &copy; 2022
+    &copy; University of Michigan 2022
 </footer>
+</div>
 </body>
 
 </html>
