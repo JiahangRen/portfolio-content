@@ -7,7 +7,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W49S00XSFS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-W49S00XSFS');
@@ -26,130 +30,133 @@
 <body>
 <div class="skip"><a href="#main">Skip to Main Content</a></div>
 <div class="container">
-<header>
-    <nav class="navbar">
+    <header>
+
+        <nav class="navbar">
+            <ul>
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="attractions.html">Attractions</a></li>
             <li><a href="services.html">services</a></li>
             <li><a href="gallery.html">gallery</a></li>
+            </ul>
+        </nav>
 
-    </nav>
-</header>
-<main id="main">
-    <div class="background">
-    <h1>Popular travel attractions</h1>
-    <h2>Recommended top-ranked attractions</h2>
-    <p>
-        I will put some famous tourist attractions here, and describe the
-        details of these attractions. At the same time, I will set up hyperlinks
-        to external websites to get more introductions of attractions, etc.
-    </p>
-    <div class="picture">
-        <figure>
-            <img src="images/west_lake.jpg" alt="West Lake"/>
-            <figcaption>lotus pond moonlight, West Lake, Hangzhou City</figcaption>
-        </figure>
-    </div>
-    <p>
-        <strong>
-            <em>
-                    <a>West Lake</a>
-            </em>
-        </strong>
-        West Lake  is a freshwater lake in Hangzhou, China. It is divided into five sections by
-        three causeways. There are numerous temples, pagodas, gardens, and natural/artificial
-        islands within the lake. Gushan (孤山) is the largest natural island and three artificial
-        islands: Xiaoyingzhou (小瀛洲), Huixin Pavilion (湖心亭), and Ruan Gongdun (阮公墩) stand at
-        the middle of the lake. Leifeng Pagoda (雷峰塔) and Baochu Pagoda (保俶塔) are separated by
-        the lake. Mirroring each other, the basic pattern of "one mountain, two towers,
-        three islands, three banks, and five lakes" is formed.
-    </p>
-
-        <div class="vediodemo">
-            <h1>Bird's Eye view of the Bund, Shanghai</h1>
-            <div class="options">
-                <button id="play">Play Video</button>
-                <button id="pause">Pause Video</button>
-                <button id="slower">Slow Down</button>
-                <button id="faster">Speed Up</button>
-                <button id="skip">Skip Ahead</button>
+    </header>
+    <main id="main">
+        <div class="background">
+            <h1>Popular travel attractions</h1>
+            <h2>Recommended top-ranked attractions</h2>
+            <p>
+                I will put some famous tourist attractions here, and describe the
+                details of these attractions. At the same time, I will set up hyperlinks
+                to external websites to get more introductions of attractions, etc.
+            </p>
+            <div class="picture">
+                <figure>
+                    <img src="images/west_lake.jpg" alt="West Lake"/>
+                    <figcaption>lotus pond moonlight, West Lake, Hangzhou City</figcaption>
+                </figure>
             </div>
-            <figure>
-                <video class="video"
-                       autoplay="false"
-                       width=70%
-                       height=50%
-                       id="videoplayer"
-                       preload="none"
-                       src="assets/Shanghai.mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <figcaption>Bird's Eye view of the Bund, Shanghai</figcaption>
-            </figure>
-            <button id="mute">Mute</button><br>
-            <label for="slider">Volume</label>: 0
-            <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
-            <div>Volume is: <span id="volume"></span><br><br></div>
+            <p>
+                <strong>
+                    <em>
+                        <a>West Lake</a>
+                    </em>
+                </strong>
+                West Lake is a freshwater lake in Hangzhou, China. It is divided into five sections by
+                three causeways. There are numerous temples, pagodas, gardens, and natural/artificial
+                islands within the lake. Gushan (孤山) is the largest natural island and three artificial
+                islands: Xiaoyingzhou (小瀛洲), Huixin Pavilion (湖心亭), and Ruan Gongdun (阮公墩) stand at
+                the middle of the lake. Leifeng Pagoda (雷峰塔) and Baochu Pagoda (保俶塔) are separated by
+                the lake. Mirroring each other, the basic pattern of "one mountain, two towers,
+                three islands, three banks, and five lakes" is formed.
+            </p>
 
-            <script src="js/video.js"></script>
+            <div class="vediodemo">
+                <h1>Bird's Eye view of the Bund, Shanghai</h1>
+                <div class="options">
+                    <button id="play">Play Video</button>
+                    <button id="pause">Pause Video</button>
+                    <button id="slower">Slow Down</button>
+                    <button id="faster">Speed Up</button>
+                    <button id="skip">Skip Ahead</button>
+                </div>
+                <figure>
+                    <video class="video"
+                           autoplay="autoplay"
+                           width=70%
+                           height=50%
+                           id="videoplayer"
+                           preload="none"
+                           src="assets/Shanghai.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <figcaption>Bird's Eye view of the Bund, Shanghai</figcaption>
+                </figure>
+                <button id="mute">Mute</button>
+                <br>
+                <label for="slider">Volume</label>: 0
+                <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+                <div>Volume is: <span id="volume"></span><br><br></div>
 
+                <script src="js/video.js"></script>
+
+            </div>
+
+            <div class="picture">
+                <figure>
+                    <img src="images/oriental_pearl_tower.PNG" alt="OrientalPearlTower"/>
+                    <figcaption>Oriental Pearl Tower, Shanghai City</figcaption>
+                </figure>
+            </div>
+
+            <p>
+                <strong>
+                    <em>
+
+                        <a>The Oriental Pearl Television Tower</a>
+
+                    </em>
+                </strong>
+                is a TV tower in Shanghai. At 468 m (1,536 feet) high, it was the
+                tallest structure in China from 1994–2007, when it was surpassed by the
+                Shanghai World Financial Center.
+            </p>
+
+            <div class="picture">
+                <figure>
+                    <img src="images/the_forbidden_city.jpg" alt="ForbiddenCity"/>
+                    <figcaption>The Forbidden City, Beijing City</figcaption>
+                </figure>
+            </div>
+
+            <p>
+                <strong>
+                    <em>
+
+                        <a>
+                            The Forbidden City
+                        </a>
+
+                    </em>
+                </strong>
+                is a palace complex in Dongcheng District, Beijing, China, and with a
+                total area of 720,000 square meters (180 acres), it is the largest
+                palace in the world.The Forbidden City was constructed from 1406 to 1420,
+                and was the former Chinese imperial palace and winter residence of
+                the Emperor of China from the Ming dynasty (since the Yongle Emperor)
+                to the end of the Qing dynasty, between 1420 and 1924. The Forbidden
+                City served as the home of Chinese emperors and their households and
+                was the ceremonial and political center of the Chinese government for
+                over 500 years. Since 1925, the Forbidden City has been under the charge
+                of the Palace Museum, whose extensive collection of artwork and artifacts
+                were built upon the imperial collections of the Ming and Qing dynasties.
+                The Forbidden City was declared a World Heritage Site in 1987.
+            </p>
         </div>
 
-    <div class="picture">
-        <figure>
-            <img src="images/oriental_pearl_tower.PNG" alt="OrientalPearlTower"/>
-            <figcaption>Oriental Pearl Tower, Shanghai City</figcaption>
-        </figure>
-    </div>
 
-    <p>
-        <strong>
-            <em>
-
-                    <a>The Oriental Pearl Television Tower</a>
-
-            </em>
-        </strong>
-        is a TV tower in Shanghai. At 468 m (1,536 feet) high, it was the
-        tallest structure in China from 1994–2007, when it was surpassed by the
-        Shanghai World Financial Center.
-    </p>
-
-    <div class="picture">
-        <figure>
-            <img src="images/the_forbidden_city.jpg" alt="ForbiddenCity"/>
-            <figcaption>The Forbidden City, Beijing City</figcaption>
-        </figure>
-    </div>
-
-    <p>
-        <strong>
-            <em>
-
-                    <a >
-                        The Forbidden City
-                    </a>
-
-            </em>
-        </strong>
-        is a palace complex in Dongcheng District, Beijing, China, and with a
-        total area of 720,000 square meters (180 acres), it is the largest
-        palace in the world.The Forbidden City was constructed from 1406 to 1420,
-        and was the former Chinese imperial palace and winter residence of
-        the Emperor of China from the Ming dynasty (since the Yongle Emperor)
-        to the end of the Qing dynasty, between 1420 and 1924. The Forbidden
-        City served as the home of Chinese emperors and their households and
-        was the ceremonial and political center of the Chinese government for
-        over 500 years. Since 1925, the Forbidden City has been under the charge
-        of the Palace Museum, whose extensive collection of artwork and artifacts
-        were built upon the imperial collections of the Ming and Qing dynasties.
-        The Forbidden City was declared a World Heritage Site in 1987.
-    </p>
-    </div>
-
-
-
-</main>
+    </main>
     <aside>
         <div class="self">
             <img src="images/jiahang.jpeg" class="photo" alt="jiahang photo">
@@ -184,9 +191,9 @@
             </form>
         </div>
     </aside>
-<footer id="index-footer">
-    &copy; University of Michigan 2022
-</footer>
+    <footer id="index-footer">
+        &copy; University of Michigan 2022
+    </footer>
 </div>
 </body>
 
